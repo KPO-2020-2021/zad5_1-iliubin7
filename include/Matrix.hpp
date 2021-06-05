@@ -5,7 +5,7 @@
 #include <cmath>
 using namespace std;
 /*!
-* \file matrix.hpp
+* \file Matrix.hpp
 *
 */
 
