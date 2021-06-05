@@ -7,7 +7,7 @@
 */
 
 /*! \class Prism
-*
+*   Klasa opisuje graniastoslup szesciokatny.
 */
 class Prism : public Block
 {
