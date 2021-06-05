@@ -11,6 +11,7 @@
 
 #include "exampleConfig.h"
 #include "example.h"
+#include "../include/lacze_do_gnuplota.hpp"
 
 /*
  * Simple main program that demontrates how access

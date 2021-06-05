@@ -14,6 +14,9 @@
 */
 class Block
 {
+ /*!
+ * Pola klasy Block sa protected dlatego, zeby byly widoczne w klasach pochodnych.
+ */
  protected:
  Vector3D *sizes_of_block;          
  std::vector<Vector3D> vertex;    
@@ -33,6 +36,13 @@ class Block
  void translation(Matrix3D rot);
  void write_to_file();
 
+/*!
+* \brief Destruktor klasy Block.
+* Argumenty:
+*    Brak argumentow.
+* Zwraca:
+*   Zwalnia dynamicznie zaalokowana pamiec.
+*/
 ~Block()
 {
 delete sizes_of_block;
