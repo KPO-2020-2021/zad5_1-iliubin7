@@ -39,6 +39,13 @@ find_lto(CXX)
 # --------------------------------------------------------------------------------
 set(SOURCES          # All .cpp files in src/
     src/example.cpp
+    src/lacze_do_gnuplota.cpp
+    src/Vector3D.cpp
+    src/Matrix3D.cpp
+    src/Cuboid.cpp
+    src/Block.cpp
+    src/Prism.cpp
+
 )
 set(TESTFILES        # All .cpp files in tests/
     tests/main.cpp
