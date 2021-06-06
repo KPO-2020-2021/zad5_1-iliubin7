@@ -5,7 +5,14 @@
 #include "lacze_do_gnuplota.hpp"
 #include <unistd.h> // biblioteka dla usleep
 #define TIME 20000
+/*!
+* \file Dron.hpp
+*
+*/
 
+/*! \class Dron
+*
+*/
 class Dron
 {
     std::vector<Vector3D> dron_way;
@@ -21,11 +28,11 @@ class Dron
     /*!
     *   Do tych rotorow bedziemy sie odwolywac
     */
-    Cuboid  oryg_rotor[4];
+    Prism  oryg_rotor[4];
     /*!
     *  Te rotory beda widoczne na ekranie
     */
-    Cuboid  copy_rotor[4];
+    Prism  copy_rotor[4];
     /*!
     * Macierz obrotu potrzebna jest, zeby dron pamietal, o ile jest obrocony
     */
@@ -74,4 +81,4 @@ public:
   * Metoda okreslenia drogi drona.
   */
   void def_way(double way);
-};
+}; 

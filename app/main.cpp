@@ -11,6 +11,7 @@
 
 #include "exampleConfig.h"
 #include "example.h"
+#include "../include/Scene.hpp"
 #include "../include/lacze_do_gnuplota.hpp"
 
 /*
@@ -28,9 +29,18 @@ int main() {
             << PROJECT_VERSION_TWEAK
             << std::endl;
   std::system("cat ../LICENSE");
+  Vector3D vec;
+   Scene s;
+   vec.info();
+       while (s.interface())
+       {
+            s.draw();
+            vec.info();
+       }
+       Dummy d = Dummy();
+       return d.doSomething() ? 0 : -1;
 
-  // Bring in the dummy class from the example source,
-  // just to show that it is accessible from main.cpp.
-  Dummy d = Dummy();
-  return d.doSomething() ? 0 : -1;
+ 
+
+  
 }

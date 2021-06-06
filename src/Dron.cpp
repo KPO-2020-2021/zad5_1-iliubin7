@@ -27,7 +27,7 @@ Dron::Dron(int id, PzG::LaczeDoGNUPlota &Lacze, Vector3D position) : Lacze(Lacze
 void Dron::lifting(double way)
 {
     Vector3D way_o;
-   way_o[2] = way;
+    way_o[2] = way;
 
     this->way = this->way + way_o;
     copy.translation(rot);
@@ -86,15 +86,17 @@ void Dron::control()
     char op;
 
     write_to_file();
+    cout << "p - przesuniecie\n";
+    cout << "o - obrot\n";
     cout << "opcje :";
     cin >> op;
     switch (op)
     {
     case 'p':
-        cout << "podaj dlugosc lotu:";
+        cout << "podaj dlugosc lotu: ";
         cin >> way;
         def_way(way);
-        Lacze.DodajNazwePliku("../datasets/droga.dat", PzG::RR_Ciagly, 2);
+        Lacze.DodajNazwePliku("../datasets/way.dat", PzG::RR_Ciagly, 2);
         for (int i = 0; i < 100; i++)
         {
             copy = orginal;
@@ -137,7 +139,7 @@ void Dron::control()
     Lacze.UsunOstatniaNazwe();
         break;
     case 'o':
-        cout << "podaj kierunek lotu (kat w stopniach):";
+        cout << "podaj kierunek lotu (kat w stopniach): ";
         cin >> angle;
         if (angle > 0)
         {
@@ -187,7 +189,7 @@ void Dron::def_way(double way)
 
     std::fstream file;
 
-    file.open("../datasets/droga.dat", std::ios::out);
+    file.open("../datasets/way.dat", std::ios::out);
     for (int i = 0; i < (int)dron_way.size(); i++)
     {
 
