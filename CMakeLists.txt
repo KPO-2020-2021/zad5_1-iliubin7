@@ -46,6 +46,8 @@ set(SOURCES          # All .cpp files in src/
     src/Block.cpp
     src/Prism.cpp
     src/Dron.cpp
+    src/Surface.cpp
+    src/Scene.cpp
 
 )
 set(TESTFILES        # All .cpp files in tests/
