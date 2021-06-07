@@ -17,6 +17,9 @@ class Vector
 {
     static int all_objects;
     static int actual_objects;
+    /*!
+    * Tablica wektora
+    */
     double cord[Size];
 
 public:
@@ -29,7 +32,7 @@ public:
    *      Tablice wypelniona wartoscia 0.
    */
     Vector();
-     /*! 
+    /*! 
    * Konstruktor parametryczny klasy Vector
    */
     Vector(Vector<Size> &vec)
@@ -39,25 +42,34 @@ public:
 
         actual_objects++;
     }
+    /*! 
+   * Konstruktor parametryczny klasy Vector
+   */
     constexpr Vector(const Vector &other)
     {
         for (int i = 0; i < Size; i++)
             cord[i] = other.cord[i];
         actual_objects++;
     }
+     /*! 
+   * Przeciazenie operatora =
+   */
     Vector &operator = (const Vector &other)
     {
         for (int i = 0; i < Size; i++)
             cord[i] = other.cord[i];
         return *this;
     }
-
+    /*! 
+     * Przeciazenie operatora =
+     */
     Vector &operator = (const float &other)
     {
         for (int i = 0; i < Size; i++)
             cord[i] = other;
         return *this;
     }
+    
     /*! 
    * \brief Destruktor klasy Vector
 
@@ -67,7 +79,10 @@ public:
    *      Usuwa wektor.
    */
     ~Vector();
-    Vector(double cord[Size]); // konstruktor
+    /*! 
+   * Konstruktor parametryczny klasy Vector
+   */
+    Vector(double cord[Size]); 
     /*! 
    * \brief Realizuje dodawanie dwoch wektorow. 
 
@@ -90,7 +105,18 @@ public:
  |        na parametr.  
    */
     Vector<Size> operator - (Vector<Size> &arg);
-    /*! 
+  /*! 
+   * \brief Przeciazenie operatora == (sprawdza czy wektory sa rowne) 
+
+   * Argumenty:
+   *   this - pierwszy wektor                           |
+ |      v - drugi wektor
+   * Zwraca:
+   *      wartosc 1 gdy wektory sa rowne,
+          a w przypadku przeciwnym zwraca wartosc 0  
+   */
+   bool operator == (const Vector &v) const;
+   /*! 
    * \brief Funktor wektora. 
 
    * Argumenty:
@@ -112,7 +138,10 @@ public:
     * \brief Metoda wypisujaca ilosc obiektow (aktualnych i wszystkich)
     *
     * Argumenty:
-    * Brak. 
+    * Brak.
+    * Zwraca:
+    * actual_objects -  Akturalna ilosc obiektow Vector3D
+    * all_objects - Laczna ilosc obiektow Vector3D
     */
     void info();
 };

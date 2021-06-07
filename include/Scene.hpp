@@ -24,6 +24,9 @@ class Scene
  * Tablica dronow
  */
  Dron *tab[N];
+ /*!
+ * Dno plaszczyzny
+ */
  Surface *bottom;
 
  public:
@@ -41,7 +44,7 @@ class Scene
  * Argumenty:
     Brak argumentow.
 * Zwraca:
-*   Zwalnia dynamicznie zaalokowana pamiec.
+*   Usuwa dynamicznie zaalokowane obiekty.
  */
  ~Scene();
 };

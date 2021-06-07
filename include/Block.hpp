@@ -18,22 +18,42 @@ class Block
  * Pola klasy Block sa protected dlatego, zeby byly widoczne w klasach pochodnych.
  */
  protected:
- Vector3D *sizes_of_block;          
- std::vector<Vector3D> vertex;    
- Vector3D center;          
+ /*!
+ * Wskaznik na wektor 3D przechowujacy wymiary bryly.
+ */
+ Vector3D *sizes_of_block;
+ /*!
+ * Wierzcholki bryly.
+ */          
+ std::vector<Vector3D> vertex;
+ /*!
+ * Zmienna okreslajaca srodek bryly.
+ */     
+ Vector3D center;
+ /*!
+ * Zmienna do zapamietywania nazwy pliku, do ktorego zostanie zapisana dana bryla.
+ */          
  std::string name;
  public:
 
  Vector3D &operator[](int index);
- Vector3D operator[](int index)const;
+ Vector3D operator[](int index) const;
 
  void set_center(Vector3D center);
  void set_name(std::string name);
  Vector3D get_center() const;
  std::string get_name() const;
-
+ /*!
+ * Metoda translacji bryly o wektor translacji.
+ */ 
  void translate(Vector3D trans);
- void translation(Matrix3D rot);
+ /*!
+ * Metoda obrotu bryly o macierz obrotu.
+ */ 
+ void rotation(Matrix3D rot);
+ /*!
+ * Metoda do zapisu danych bryly
+ */
  void write_to_file();
 
 /*!
@@ -41,7 +61,7 @@ class Block
 * Argumenty:
 *    Brak argumentow.
 * Zwraca:
-*   Zwalnia dynamicznie zaalokowana pamiec.
+*   Usuwa dynamicznie stworzony obiekt.
 */
 ~Block()
 {

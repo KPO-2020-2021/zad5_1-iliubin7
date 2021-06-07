@@ -30,7 +30,7 @@ void Dron::lifting(double way)
     way_o[2] = way;
 
     this->way = this->way + way_o;
-    copy.translation(rot);
+    copy.rotation(rot);
     copy.translate(this->way);
 }
 
@@ -40,7 +40,7 @@ void Dron::translate(double way)
     way_o[0] = way * cos(angle * M_PI / 180);
     way_o[1] = way * sin(angle * M_PI / 180);
     this->way = this->way + way_o;
-    copy.translation(rot);
+    copy.rotation(rot);
     copy.translate(this->way);
 }
 
@@ -49,7 +49,7 @@ void Dron::rotate(double angle)
     this->angle += angle;
     Matrix3D matr;
     rot = matr * matrix_rot_z(this->angle);
-    copy.translation(rot);
+    copy.rotation(rot);
     copy.translate(this->way);
 }
 void Dron::rotor_rotation()
@@ -63,7 +63,7 @@ void Dron::rotor_rotation()
     matr = matr * matrix_rot_z(angle);
     for (int i = 0; i < 4; i++)
     {
-        copy_rotor[i].translation(matr);
+        copy_rotor[i].rotation(matr);
     }
 
     for (int i = 0; i < 4; i++)

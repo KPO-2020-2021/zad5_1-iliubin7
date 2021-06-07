@@ -45,6 +45,15 @@ Vector<Size> Vector<Size>::operator-(Vector<Size> &arg)
     }
     return Result;
 }
+template <int Size>
+bool Vector<Size>::operator==(const Vector &v) const
+{
+    for (unsigned int i=0;i<Size;i++){
+        if ((abs(cord[i] - v.cord[i]) <= 0.0001))
+            return true;
+    }
+    return false;
+}
 
 template <int Size>
 double Vector<Size>::operator[](int index) const

@@ -50,9 +50,8 @@ class Dron
     */
     int id; 
 public:
-
   /*!
-  * Konstruktor klasy Dron
+  * Konstruktor parametryczny klasy Dron
   */
   Dron(int id,PzG::LaczeDoGNUPlota &Lacze,Vector3D position);
   /*!
@@ -63,12 +62,17 @@ public:
   * Przesuwa dron o podana droge do gory
   */
   void lifting(double way);
+  /*!
+  * Metoda przesuniecia drona o podana droge
+  */
   void translate(double way);
   /*!
+  * Metoda rotacji drona o podany kat
   * kat (podajemy w stopniach)
   */
   void rotate(double angle);
   /*! 
+  * Metoda obrotu rotorow drona wokol wlasnej osi (rotory obracaja sie przeciwlegle do siebie)
   * kat (podajemy w stopniach)
   */
   void rotor_rotation();
@@ -76,6 +80,10 @@ public:
   * Metoda zapisu do pliku wszystkich elementow drona.
   */
   void write_to_file();
+  /*!
+  * Metoda kontroli nad dronem(wybieramy odpowiednie opcje przesuniecia lub obrotu i 
+  * podajemy odpowiednio dlugosc lotu lub kierunek lotu(podajemy jako kat w stopniach)))
+  */
   void control();
   /*! 
   * Metoda okreslenia drogi drona.

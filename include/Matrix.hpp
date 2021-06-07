@@ -45,6 +45,16 @@ Vector<Size> operator * (Vector<Size> cor);
  *      result - wynik mnozenia macierzy               
  */
 Matrix<Size> operator * (Matrix<Size> cor);
+/*!
+   * \brief Przeciążenie == macierzy                                                         
+   *  Argumenty:                                                               
+   *      \param[in] this - macierz, ktora porownujemy                   
+   *      \param[in] tmp - macierz, z ktora porownujemy                                                          
+   *  Zwraca:                                                                  
+   *      \retval true - jesli sa rowne
+   *      \retval false - jesli nie sa                
+   */
+bool operator == (const Matrix &tmp) const;
  /*!
   * \brief Funktor macierzy                                                          |
   * Argumenty:                                                                |

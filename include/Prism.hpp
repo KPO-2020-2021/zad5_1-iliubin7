@@ -6,7 +6,7 @@
 *
 */
 
-/*! \class Prism
+/*! \class Prism (dziedziczy klas Block)
 *   Klasa opisuje graniastoslup szesciokatny.
 */
 class Prism : public Block

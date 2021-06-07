@@ -51,6 +51,17 @@ Matrix<Size> Matrix<Size>::operator * (Matrix<Size> cor)
     return Result;
 }
 
+template<int Size>
+bool Matrix<Size>::operator == (Matrix const &tmp) const{
+    for (unsigned int i=0;i<Size;++i){
+        for (unsigned int j=0;j<Size;++j){
+            if (abs(Mat[i][j]-tmp.Mat[i][j])<=0.000001)
+                return true;
+        }
+    }
+    return false;
+}
+
 template <int Size>
 double Matrix<Size>::operator()(int row, int column) const
 {

@@ -38,7 +38,7 @@ void Block::translate(Vector3D trans)
     center = center + trans;
 }
 
-void Block::translation(Matrix3D rot)
+void Block::rotation(Matrix3D rot)
 {
     for (int i = 0; i < (int)vertex.size(); i++)
     {
