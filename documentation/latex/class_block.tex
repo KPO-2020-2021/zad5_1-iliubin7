@@ -1,0 +1,105 @@
+\hypertarget{class_block}{}\doxysection{Block Class Reference}
+\label{class_block}\index{Block@{Block}}
+Inheritance diagram for Block\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_block}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_block_aad0c3e3f63a08c738ba6f71d9a8ebb87}\label{class_block_aad0c3e3f63a08c738ba6f71d9a8ebb87}} 
+\mbox{\hyperlink{class_vector}{Vector3D}} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int index)
+\item 
+\mbox{\Hypertarget{class_block_ad0bff35ee00ec7ae90a185182ceb0b66}\label{class_block_ad0bff35ee00ec7ae90a185182ceb0b66}} 
+\mbox{\hyperlink{class_vector}{Vector3D}} {\bfseries operator\mbox{[}$\,$\mbox{]}} (int index) const
+\item 
+\mbox{\Hypertarget{class_block_ae98ee722ed24480a753f23bda96976a4}\label{class_block_ae98ee722ed24480a753f23bda96976a4}} 
+void {\bfseries set\+\_\+center} (\mbox{\hyperlink{class_vector}{Vector3D}} \mbox{\hyperlink{class_block_a0813c489476be62decfe739c27924f80}{center}})
+\item 
+\mbox{\Hypertarget{class_block_a93de9b48d642bfdeeab1cba1747a5885}\label{class_block_a93de9b48d642bfdeeab1cba1747a5885}} 
+void {\bfseries set\+\_\+name} (std\+::string \mbox{\hyperlink{class_block_a03c4cde61bd157be1a585643ec5c7817}{name}})
+\item 
+\mbox{\Hypertarget{class_block_a10992e2f43691dda2253138d413a5771}\label{class_block_a10992e2f43691dda2253138d413a5771}} 
+\mbox{\hyperlink{class_vector}{Vector3D}} {\bfseries get\+\_\+center} () const
+\item 
+\mbox{\Hypertarget{class_block_af2a0ed13f0c1926577ce21d712cafc9f}\label{class_block_af2a0ed13f0c1926577ce21d712cafc9f}} 
+std\+::string {\bfseries get\+\_\+name} () const
+\item 
+void \mbox{\hyperlink{class_block_a771dde0ce3606aead83eee7e22ef26a6}{translate}} (\mbox{\hyperlink{class_vector}{Vector3D}} trans)
+\item 
+void \mbox{\hyperlink{class_block_a60267e0f11ace9e04e55594c59155919}{rotation}} (\mbox{\hyperlink{class_matrix}{Matrix3D}} rot)
+\item 
+void \mbox{\hyperlink{class_block_a03ad64a67b47294574f3698cfdb086a9}{write\+\_\+to\+\_\+file}} ()
+\item 
+\mbox{\Hypertarget{class_block_a19d1bd0e1cef6a865ed2745a2e648405}\label{class_block_a19d1bd0e1cef6a865ed2745a2e648405}} 
+\mbox{\hyperlink{class_block_a19d1bd0e1cef6a865ed2745a2e648405}{$\sim$\+Block}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klasy \mbox{\hyperlink{class_block}{Block}}. Argumenty\+: Brak argumentow. Zwraca\+: Usuwa dynamicznie stworzony obiekt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vector}{Vector3D}} $\ast$ \mbox{\hyperlink{class_block_a707349e788620bd169aa428867a7f8b3}{sizes\+\_\+of\+\_\+block}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_vector}{Vector3D}} $>$ \mbox{\hyperlink{class_block_a95cdf537b2413b15313eb2a6dab2d059}{vertex}}
+\item 
+\mbox{\hyperlink{class_vector}{Vector3D}} \mbox{\hyperlink{class_block_a0813c489476be62decfe739c27924f80}{center}}
+\item 
+std\+::string \mbox{\hyperlink{class_block_a03c4cde61bd157be1a585643ec5c7817}{name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_block_a60267e0f11ace9e04e55594c59155919}\label{class_block_a60267e0f11ace9e04e55594c59155919}} 
+\index{Block@{Block}!rotation@{rotation}}
+\index{rotation@{rotation}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{rotation()}{rotation()}}
+{\footnotesize\ttfamily void Block\+::rotation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix}{Matrix3D}}}]{rot }\end{DoxyParamCaption})}
+
+Metoda obrotu bryly o macierz obrotu. \mbox{\Hypertarget{class_block_a771dde0ce3606aead83eee7e22ef26a6}\label{class_block_a771dde0ce3606aead83eee7e22ef26a6}} 
+\index{Block@{Block}!translate@{translate}}
+\index{translate@{translate}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily void Block\+::translate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector}{Vector3D}}}]{trans }\end{DoxyParamCaption})}
+
+Metoda translacji bryly o wektor translacji. \mbox{\Hypertarget{class_block_a03ad64a67b47294574f3698cfdb086a9}\label{class_block_a03ad64a67b47294574f3698cfdb086a9}} 
+\index{Block@{Block}!write\_to\_file@{write\_to\_file}}
+\index{write\_to\_file@{write\_to\_file}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{write\_to\_file()}{write\_to\_file()}}
+{\footnotesize\ttfamily void Block\+::write\+\_\+to\+\_\+file (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda do zapisu danych bryly 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_block_a0813c489476be62decfe739c27924f80}\label{class_block_a0813c489476be62decfe739c27924f80}} 
+\index{Block@{Block}!center@{center}}
+\index{center@{center}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{center}{center}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector}{Vector3D}} Block\+::center\hspace{0.3cm}{\ttfamily [protected]}}
+
+Zmienna okreslajaca srodek bryly. \mbox{\Hypertarget{class_block_a03c4cde61bd157be1a585643ec5c7817}\label{class_block_a03c4cde61bd157be1a585643ec5c7817}} 
+\index{Block@{Block}!name@{name}}
+\index{name@{name}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Block\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+Zmienna do zapamietywania nazwy pliku, do ktorego zostanie zapisana dana bryla. \mbox{\Hypertarget{class_block_a707349e788620bd169aa428867a7f8b3}\label{class_block_a707349e788620bd169aa428867a7f8b3}} 
+\index{Block@{Block}!sizes\_of\_block@{sizes\_of\_block}}
+\index{sizes\_of\_block@{sizes\_of\_block}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{sizes\_of\_block}{sizes\_of\_block}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector}{Vector3D}}$\ast$ Block\+::sizes\+\_\+of\+\_\+block\hspace{0.3cm}{\ttfamily [protected]}}
+
+Pola klasy \mbox{\hyperlink{class_block}{Block}} sa protected dlatego, zeby byly widoczne w klasach pochodnych.
+
+Wskaznik na wektor 3D przechowujacy wymiary bryly. \mbox{\Hypertarget{class_block_a95cdf537b2413b15313eb2a6dab2d059}\label{class_block_a95cdf537b2413b15313eb2a6dab2d059}} 
+\index{Block@{Block}!vertex@{vertex}}
+\index{vertex@{vertex}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{vertex}{vertex}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_vector}{Vector3D}}$>$ Block\+::vertex\hspace{0.3cm}{\ttfamily [protected]}}
+
+Wierzcholki bryly. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/eliash/\+K\+P\+O/\+Repo/zad5\+\_\+1-\/iliubin7/include/\mbox{\hyperlink{_block_8hpp}{Block.\+hpp}}\item 
+/home/eliash/\+K\+P\+O/\+Repo/zad5\+\_\+1-\/iliubin7/src/Block.\+cpp\end{DoxyCompactItemize}

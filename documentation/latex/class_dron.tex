@@ -1,0 +1,81 @@
+\hypertarget{class_dron}{}\doxysection{Dron Class Reference}
+\label{class_dron}\index{Dron@{Dron}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dron_a42665cef1dc527d783741f77d2025d13}{Dron}} (int id, \mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} \&Lacze, \mbox{\hyperlink{class_vector}{Vector3D}} position)
+\item 
+void \mbox{\hyperlink{class_dron_ad71d03ed602f200acf3901a73b3328f4}{lifting}} (double way)
+\item 
+void \mbox{\hyperlink{class_dron_a08c6f85cdef64d5a328d9a0dbcf4bca3}{translate}} (double way)
+\item 
+void \mbox{\hyperlink{class_dron_ac58fd9b8cddd7b60c0b94731e2f68b57}{rotate}} (double angle)
+\item 
+void \mbox{\hyperlink{class_dron_a090227118aca2eb459986048e75bdcc6}{rotor\+\_\+rotation}} ()
+\item 
+void \mbox{\hyperlink{class_dron_a7499968f3dec76618b496ac7c921319e}{write\+\_\+to\+\_\+file}} ()
+\item 
+void \mbox{\hyperlink{class_dron_af685f82854dcdbcac885e7ddc83cd761}{control}} ()
+\item 
+void \mbox{\hyperlink{class_dron_ad0eabff529e7b498e3c395580b7e0462}{def\+\_\+way}} (double way)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_dron_a42665cef1dc527d783741f77d2025d13}\label{class_dron_a42665cef1dc527d783741f77d2025d13}} 
+\index{Dron@{Dron}!Dron@{Dron}}
+\index{Dron@{Dron}!Dron@{Dron}}
+\doxysubsubsection{\texorpdfstring{Dron()}{Dron()}}
+{\footnotesize\ttfamily Dron\+::\+Dron (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} \&}]{Lacze,  }\item[{\mbox{\hyperlink{class_vector}{Vector3D}}}]{position }\end{DoxyParamCaption})}
+
+Konstruktor parametryczny klasy \mbox{\hyperlink{class_dron}{Dron}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dron_af685f82854dcdbcac885e7ddc83cd761}\label{class_dron_af685f82854dcdbcac885e7ddc83cd761}} 
+\index{Dron@{Dron}!control@{control}}
+\index{control@{control}!Dron@{Dron}}
+\doxysubsubsection{\texorpdfstring{control()}{control()}}
+{\footnotesize\ttfamily void Dron\+::control (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda kontroli nad dronem(wybieramy odpowiednie opcje przesuniecia lub obrotu i podajemy odpowiednio dlugosc lotu lub kierunek lotu(podajemy jako kat w stopniach))) Uzywamy ta funkcje dlatego, zeby byla widoczna animacja drona. Ta funckja zawiesza wykonanie na czas wyrazony w mikrosekundach.\mbox{\Hypertarget{class_dron_ad0eabff529e7b498e3c395580b7e0462}\label{class_dron_ad0eabff529e7b498e3c395580b7e0462}} 
+\index{Dron@{Dron}!def\_way@{def\_way}}
+\index{def\_way@{def\_way}!Dron@{Dron}}
+\doxysubsubsection{\texorpdfstring{def\_way()}{def\_way()}}
+{\footnotesize\ttfamily void Dron\+::def\+\_\+way (\begin{DoxyParamCaption}\item[{double}]{way }\end{DoxyParamCaption})}
+
+Metoda okreslenia drogi drona. \mbox{\Hypertarget{class_dron_ad71d03ed602f200acf3901a73b3328f4}\label{class_dron_ad71d03ed602f200acf3901a73b3328f4}} 
+\index{Dron@{Dron}!lifting@{lifting}}
+\index{lifting@{lifting}!Dron@{Dron}}
+\doxysubsubsection{\texorpdfstring{lifting()}{lifting()}}
+{\footnotesize\ttfamily void Dron\+::lifting (\begin{DoxyParamCaption}\item[{double}]{way }\end{DoxyParamCaption})}
+
+Metoda dla unoszenia drona. Argumenty\+: way -\/ droga drona. Zwraca\+: Przesuwa dron o podana droge do gory \mbox{\Hypertarget{class_dron_ac58fd9b8cddd7b60c0b94731e2f68b57}\label{class_dron_ac58fd9b8cddd7b60c0b94731e2f68b57}} 
+\index{Dron@{Dron}!rotate@{rotate}}
+\index{rotate@{rotate}!Dron@{Dron}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily void Dron\+::rotate (\begin{DoxyParamCaption}\item[{double}]{angle }\end{DoxyParamCaption})}
+
+Metoda rotacji drona o podany kat kat (podajemy w stopniach) \mbox{\Hypertarget{class_dron_a090227118aca2eb459986048e75bdcc6}\label{class_dron_a090227118aca2eb459986048e75bdcc6}} 
+\index{Dron@{Dron}!rotor\_rotation@{rotor\_rotation}}
+\index{rotor\_rotation@{rotor\_rotation}!Dron@{Dron}}
+\doxysubsubsection{\texorpdfstring{rotor\_rotation()}{rotor\_rotation()}}
+{\footnotesize\ttfamily void Dron\+::rotor\+\_\+rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda obrotu rotorow drona wokol wlasnej osi (rotory obracaja sie przeciwlegle do siebie) kat (podajemy w stopniach) \mbox{\Hypertarget{class_dron_a08c6f85cdef64d5a328d9a0dbcf4bca3}\label{class_dron_a08c6f85cdef64d5a328d9a0dbcf4bca3}} 
+\index{Dron@{Dron}!translate@{translate}}
+\index{translate@{translate}!Dron@{Dron}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily void Dron\+::translate (\begin{DoxyParamCaption}\item[{double}]{way }\end{DoxyParamCaption})}
+
+Metoda przesuniecia drona o podana droge \mbox{\Hypertarget{class_dron_a7499968f3dec76618b496ac7c921319e}\label{class_dron_a7499968f3dec76618b496ac7c921319e}} 
+\index{Dron@{Dron}!write\_to\_file@{write\_to\_file}}
+\index{write\_to\_file@{write\_to\_file}!Dron@{Dron}}
+\doxysubsubsection{\texorpdfstring{write\_to\_file()}{write\_to\_file()}}
+{\footnotesize\ttfamily void Dron\+::write\+\_\+to\+\_\+file (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda zapisu do pliku wszystkich elementow drona. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/eliash/\+K\+P\+O/\+Repo/zad5\+\_\+1-\/iliubin7/include/\mbox{\hyperlink{_dron_8hpp}{Dron.\+hpp}}\item 
+/home/eliash/\+K\+P\+O/\+Repo/zad5\+\_\+1-\/iliubin7/src/Dron.\+cpp\end{DoxyCompactItemize}

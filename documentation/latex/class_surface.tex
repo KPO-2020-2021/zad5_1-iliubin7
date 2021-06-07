@@ -1,0 +1,65 @@
+\hypertarget{class_surface}{}\doxysection{Surface Class Reference}
+\label{class_surface}\index{Surface@{Surface}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_surface_a3bfe6e25fbf797ce1fc38edb62260b7e}{Surface}} (\mbox{\hyperlink{class_vector}{Vector3D}} sizes=\mbox{\hyperlink{class_vector}{Vector3D}}(), int mesh\+\_\+density=10, std\+::string name=\char`\"{}../datasets/surface.\+dat\char`\"{})
+\item 
+\mbox{\Hypertarget{class_surface_afa039736f94ef30c957674102e117153}\label{class_surface_afa039736f94ef30c957674102e117153}} 
+\mbox{\hyperlink{class_vector}{Vector3D}} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int index)
+\item 
+\mbox{\Hypertarget{class_surface_a47a607323ca9762a110f7eb4ce946c88}\label{class_surface_a47a607323ca9762a110f7eb4ce946c88}} 
+\mbox{\hyperlink{class_vector}{Vector3D}} {\bfseries operator\mbox{[}$\,$\mbox{]}} (int index) const
+\item 
+\mbox{\Hypertarget{class_surface_abb2d9d015d70048d864f4e4863f0ea0c}\label{class_surface_abb2d9d015d70048d864f4e4863f0ea0c}} 
+void {\bfseries set\+\_\+name} (std\+::string name)
+\item 
+\mbox{\Hypertarget{class_surface_a94298c13aff36f9e6287b34111430c50}\label{class_surface_a94298c13aff36f9e6287b34111430c50}} 
+std\+::string {\bfseries get\+\_\+name} () const
+\item 
+void \mbox{\hyperlink{class_surface_a315eeaaf4d942ed45be471967e555481}{write\+\_\+to\+\_\+file}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_surface_a1158debbfb293bc370440befd55d2a51}\label{class_surface_a1158debbfb293bc370440befd55d2a51}} 
+std\+::vector$<$ \mbox{\hyperlink{class_vector}{Vector3D}} $>$ {\bfseries vertex}
+\item 
+\mbox{\Hypertarget{class_surface_aa2f8825ced7176077980219e9a3f3e79}\label{class_surface_aa2f8825ced7176077980219e9a3f3e79}} 
+std\+::string {\bfseries name}
+\item 
+int \mbox{\hyperlink{class_surface_a20d330a1bdd9d8a4a0cc57739390e280}{straight\+\_\+counter}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_surface_a3bfe6e25fbf797ce1fc38edb62260b7e}\label{class_surface_a3bfe6e25fbf797ce1fc38edb62260b7e}} 
+\index{Surface@{Surface}!Surface@{Surface}}
+\index{Surface@{Surface}!Surface@{Surface}}
+\doxysubsubsection{\texorpdfstring{Surface()}{Surface()}}
+{\footnotesize\ttfamily Surface\+::\+Surface (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector}{Vector3D}}}]{sizes = {\ttfamily \mbox{\hyperlink{class_vector}{Vector3D}}()},  }\item[{int}]{mesh\+\_\+density = {\ttfamily 10},  }\item[{std\+::string}]{name = {\ttfamily \char`\"{}../datasets/surface.dat\char`\"{}} }\end{DoxyParamCaption})}
+
+Konstruktor parametryczny plaszczyzny Argumenty\+: sizes -\/ wymiary wektora3D mesh\+\_\+density -\/ gestosc siatki (domyslnie ustalmy na 10) Zwraca\+: Plaszczyzne o wymiarach 300x300 (wspolrzedna z = 0) 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_surface_a315eeaaf4d942ed45be471967e555481}\label{class_surface_a315eeaaf4d942ed45be471967e555481}} 
+\index{Surface@{Surface}!write\_to\_file@{write\_to\_file}}
+\index{write\_to\_file@{write\_to\_file}!Surface@{Surface}}
+\doxysubsubsection{\texorpdfstring{write\_to\_file()}{write\_to\_file()}}
+{\footnotesize\ttfamily void Surface\+::write\+\_\+to\+\_\+file (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda do zapisu danych do pliku 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_surface_a20d330a1bdd9d8a4a0cc57739390e280}\label{class_surface_a20d330a1bdd9d8a4a0cc57739390e280}} 
+\index{Surface@{Surface}!straight\_counter@{straight\_counter}}
+\index{straight\_counter@{straight\_counter}!Surface@{Surface}}
+\doxysubsubsection{\texorpdfstring{straight\_counter}{straight\_counter}}
+{\footnotesize\ttfamily int Surface\+::straight\+\_\+counter\hspace{0.3cm}{\ttfamily [protected]}}
+
+zmienna potrzebna do zliczenia prostych (zmienna tak naprawde okresla ile musimy dac E\+N\+T\+ER, bo zapisujemy liniami) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/eliash/\+K\+P\+O/\+Repo/zad5\+\_\+1-\/iliubin7/include/\mbox{\hyperlink{_surface_8hpp}{Surface.\+hpp}}\item 
+/home/eliash/\+K\+P\+O/\+Repo/zad5\+\_\+1-\/iliubin7/src/Surface.\+cpp\end{DoxyCompactItemize}

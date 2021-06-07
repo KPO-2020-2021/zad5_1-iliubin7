@@ -1,0 +1,188 @@
+\hypertarget{class_vector}{}\doxysection{Vector$<$ Size $>$ Class Template Reference}
+\label{class_vector}\index{Vector$<$ Size $>$@{Vector$<$ Size $>$}}
+
+
+opisuje wektor o Size-\/wierszach  
+
+
+
+
+{\ttfamily \#include $<$Vector.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vector_a14c3a232bcf39100618dffbbf11b16d1}{Vector}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor bezparametryczny klasy \mbox{\hyperlink{class_vector}{Vector}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vector_aff2338e863f3fb3d924159cf4cf79046}{Vector}} (\mbox{\hyperlink{class_vector}{Vector}}$<$ Size $>$ \&vec)
+\item 
+constexpr \mbox{\hyperlink{class_vector_ad9aa9eb2db3a059ae47b0a5e00846828}{Vector}} (const \mbox{\hyperlink{class_vector}{Vector}} \&other)
+\item 
+\mbox{\hyperlink{class_vector}{Vector}} \& \mbox{\hyperlink{class_vector_a6c51222f0bc5dec2c076a4463ddfbd00}{operator=}} (const \mbox{\hyperlink{class_vector}{Vector}} \&other)
+\item 
+\mbox{\hyperlink{class_vector}{Vector}} \& \mbox{\hyperlink{class_vector_add503532b5deede3c3110310cbe2883b}{operator=}} (const float \&other)
+\item 
+\mbox{\hyperlink{class_vector_ad6583cc252cb3954c7a090380f096a21}{$\sim$\+Vector}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klasy \mbox{\hyperlink{class_vector}{Vector}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vector_a64499e06a4cabfd59e99af568f800123}{Vector}} (double cord\mbox{[}Size\mbox{]})
+\item 
+\mbox{\hyperlink{class_vector}{Vector}}$<$ Size $>$ \mbox{\hyperlink{class_vector_a9ce075bd78810fc817c27b39bb56bb2d}{operator+}} (\mbox{\hyperlink{class_vector}{Vector}}$<$ Size $>$ \&arg)
+\item 
+\mbox{\hyperlink{class_vector}{Vector}}$<$ Size $>$ \mbox{\hyperlink{class_vector_ab5cbd7fb1f3b7731b8f5bc042503da00}{operator-\/}} (\mbox{\hyperlink{class_vector}{Vector}}$<$ Size $>$ \&arg)
+\item 
+bool \mbox{\hyperlink{class_vector_a8c39798b88a002647ab993ae0e1b18d2}{operator==}} (const \mbox{\hyperlink{class_vector}{Vector}} \&v) const
+\item 
+double \mbox{\hyperlink{class_vector_a70107c8a50f5789594485387d1f04f90}{operator\mbox{[}$\,$\mbox{]}}} (int index) const
+\begin{DoxyCompactList}\small\item\em Funktor wektora. \end{DoxyCompactList}\item 
+double \& \mbox{\hyperlink{class_vector_a680bc11d90cc921122131ecea8443a27}{operator\mbox{[}$\,$\mbox{]}}} (int index)
+\begin{DoxyCompactList}\small\item\em Funktor wektora. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_vector_a4039d8611d04abcec2967490b175a1ed}{info}} ()
+\begin{DoxyCompactList}\small\item\em Metoda wypisujaca ilosc obiektow (aktualnych i wszystkich) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$int Size$>$\newline
+class Vector$<$ Size $>$}
+
+opisuje wektor o Size-\/wierszach 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_vector_a14c3a232bcf39100618dffbbf11b16d1}\label{class_vector_a14c3a232bcf39100618dffbbf11b16d1}} 
+\index{Vector$<$ Size $>$@{Vector$<$ Size $>$}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector$<$ Size $>$@{Vector$<$ Size $>$}}
+\doxysubsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$int Size$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ Size $>$\+::\mbox{\hyperlink{class_vector}{Vector}}}
+
+
+
+Konstruktor bezparametryczny klasy \mbox{\hyperlink{class_vector}{Vector}}. 
+
+Argumenty\+: Brak argumentow. Zwraca\+: Tablice wypelniona wartoscia 0. \mbox{\Hypertarget{class_vector_aff2338e863f3fb3d924159cf4cf79046}\label{class_vector_aff2338e863f3fb3d924159cf4cf79046}} 
+\index{Vector$<$ Size $>$@{Vector$<$ Size $>$}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector$<$ Size $>$@{Vector$<$ Size $>$}}
+\doxysubsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$int Size$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ Size $>$\+::\mbox{\hyperlink{class_vector}{Vector}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector}{Vector}}$<$ Size $>$ \&}]{vec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Konstruktor parametryczny klasy \mbox{\hyperlink{class_vector}{Vector}} \mbox{\Hypertarget{class_vector_ad9aa9eb2db3a059ae47b0a5e00846828}\label{class_vector_ad9aa9eb2db3a059ae47b0a5e00846828}} 
+\index{Vector$<$ Size $>$@{Vector$<$ Size $>$}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector$<$ Size $>$@{Vector$<$ Size $>$}}
+\doxysubsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$int Size$>$ \\
+constexpr \mbox{\hyperlink{class_vector}{Vector}}$<$ Size $>$\+::\mbox{\hyperlink{class_vector}{Vector}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector}{Vector}}$<$ Size $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+Konstruktor parametryczny klasy \mbox{\hyperlink{class_vector}{Vector}} \mbox{\Hypertarget{class_vector_ad6583cc252cb3954c7a090380f096a21}\label{class_vector_ad6583cc252cb3954c7a090380f096a21}} 
+\index{Vector$<$ Size $>$@{Vector$<$ Size $>$}!````~Vector@{$\sim$Vector}}
+\index{````~Vector@{$\sim$Vector}!Vector$<$ Size $>$@{Vector$<$ Size $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$Vector()}{~Vector()}}
+{\footnotesize\ttfamily template$<$int Size$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ Size $>$\+::$\sim$\mbox{\hyperlink{class_vector}{Vector}}}
+
+
+
+Destruktor klasy \mbox{\hyperlink{class_vector}{Vector}}. 
+
+Argumenty\+: Brak argumentow. ~\newline
+ Zwraca\+: Usuwa wektor. \mbox{\Hypertarget{class_vector_a64499e06a4cabfd59e99af568f800123}\label{class_vector_a64499e06a4cabfd59e99af568f800123}} 
+\index{Vector$<$ Size $>$@{Vector$<$ Size $>$}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector$<$ Size $>$@{Vector$<$ Size $>$}}
+\doxysubsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$int Size$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ Size $>$\+::\mbox{\hyperlink{class_vector}{Vector}} (\begin{DoxyParamCaption}\item[{double}]{cord\mbox{[}\+Size\mbox{]} }\end{DoxyParamCaption})}
+
+Konstruktor parametryczny klasy \mbox{\hyperlink{class_vector}{Vector}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_vector_a4039d8611d04abcec2967490b175a1ed}\label{class_vector_a4039d8611d04abcec2967490b175a1ed}} 
+\index{Vector$<$ Size $>$@{Vector$<$ Size $>$}!info@{info}}
+\index{info@{info}!Vector$<$ Size $>$@{Vector$<$ Size $>$}}
+\doxysubsubsection{\texorpdfstring{info()}{info()}}
+{\footnotesize\ttfamily template$<$int Size$>$ \\
+void \mbox{\hyperlink{class_vector}{Vector}}$<$ Size $>$\+::info}
+
+
+
+Metoda wypisujaca ilosc obiektow (aktualnych i wszystkich) 
+
+Argumenty\+: Brak. Zwraca\+: actual\+\_\+objects -\/ Akturalna ilosc obiektow Vector3D all\+\_\+objects -\/ Laczna ilosc obiektow Vector3D \mbox{\Hypertarget{class_vector_a9ce075bd78810fc817c27b39bb56bb2d}\label{class_vector_a9ce075bd78810fc817c27b39bb56bb2d}} 
+\index{Vector$<$ Size $>$@{Vector$<$ Size $>$}!operator+@{operator+}}
+\index{operator+@{operator+}!Vector$<$ Size $>$@{Vector$<$ Size $>$}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily template$<$int Size$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ Size $>$ \mbox{\hyperlink{class_vector}{Vector}}$<$ Size $>$\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector}{Vector}}$<$ Size $>$ \&}]{arg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}\brief Realizuje dodawanie dwoch wektorow. 
+
+Argumenty:
+    this - pierwszy skladnik dodawania,                                   |
+\end{DoxyVerb}
+ $\vert$ arg -\/ drugi skladnik dodawania. Zwraca\+: Sume dwoch skladnikow przekazanych jako wskaznik $\vert$ $\vert$ na parametr. \mbox{\Hypertarget{class_vector_ab5cbd7fb1f3b7731b8f5bc042503da00}\label{class_vector_ab5cbd7fb1f3b7731b8f5bc042503da00}} 
+\index{Vector$<$ Size $>$@{Vector$<$ Size $>$}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vector$<$ Size $>$@{Vector$<$ Size $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily template$<$int Size$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ Size $>$ \mbox{\hyperlink{class_vector}{Vector}}$<$ Size $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector}{Vector}}$<$ Size $>$ \&}]{arg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}\brief Realizuje odejmowanie dwoch wektorow. 
+
+Argumenty:
+   this - pierwszy skladnik odejmowania,                                 |
+\end{DoxyVerb}
+ $\vert$ arg -\/ drugi skladnik odejmowania. ~\newline
+ Zwraca\+: Roznice dwoch skladnikow przekazanych jako wskaznik $\vert$ $\vert$ na parametr. ~\newline
+ \mbox{\Hypertarget{class_vector_add503532b5deede3c3110310cbe2883b}\label{class_vector_add503532b5deede3c3110310cbe2883b}} 
+\index{Vector$<$ Size $>$@{Vector$<$ Size $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Vector$<$ Size $>$@{Vector$<$ Size $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$int Size$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}\& \mbox{\hyperlink{class_vector}{Vector}}$<$ Size $>$\+::operator= (\begin{DoxyParamCaption}\item[{const float \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Przeciazenie operatora = \mbox{\Hypertarget{class_vector_a6c51222f0bc5dec2c076a4463ddfbd00}\label{class_vector_a6c51222f0bc5dec2c076a4463ddfbd00}} 
+\index{Vector$<$ Size $>$@{Vector$<$ Size $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Vector$<$ Size $>$@{Vector$<$ Size $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$int Size$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}\& \mbox{\hyperlink{class_vector}{Vector}}$<$ Size $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector}{Vector}}$<$ Size $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Przeciazenie operatora = \mbox{\Hypertarget{class_vector_a8c39798b88a002647ab993ae0e1b18d2}\label{class_vector_a8c39798b88a002647ab993ae0e1b18d2}} 
+\index{Vector$<$ Size $>$@{Vector$<$ Size $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!Vector$<$ Size $>$@{Vector$<$ Size $>$}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$int Size$>$ \\
+bool \mbox{\hyperlink{class_vector}{Vector}}$<$ Size $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector}{Vector}}$<$ Size $>$ \&}]{v }\end{DoxyParamCaption}) const}
+
+\begin{DoxyVerb}\brief Przeciazenie operatora == (sprawdza czy wektory sa rowne) 
+
+Argumenty:
+  this - pierwszy wektor                           |
+\end{DoxyVerb}
+ $\vert$ v -\/ drugi wektor Zwraca\+: wartosc 1 gdy wektory sa rowne, a w przypadku przeciwnym zwraca wartosc 0 ~\newline
+ \mbox{\Hypertarget{class_vector_a680bc11d90cc921122131ecea8443a27}\label{class_vector_a680bc11d90cc921122131ecea8443a27}} 
+\index{Vector$<$ Size $>$@{Vector$<$ Size $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Vector$<$ Size $>$@{Vector$<$ Size $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$int Size$>$ \\
+double \& \mbox{\hyperlink{class_vector}{Vector}}$<$ Size $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Funktor wektora. 
+
+Argumenty\+: index -\/ index wektora. Zwraca\+: Wartosc wektora w danym miejscu tablicy. \mbox{\Hypertarget{class_vector_a70107c8a50f5789594485387d1f04f90}\label{class_vector_a70107c8a50f5789594485387d1f04f90}} 
+\index{Vector$<$ Size $>$@{Vector$<$ Size $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Vector$<$ Size $>$@{Vector$<$ Size $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$int Size$>$ \\
+double \mbox{\hyperlink{class_vector}{Vector}}$<$ Size $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+
+
+
+Funktor wektora. 
+
+Argumenty\+: index -\/ index wektora. Zwraca\+: Wartosc wektora w danym miejscu tablicy jako stala. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/eliash/\+K\+P\+O/\+Repo/zad5\+\_\+1-\/iliubin7/include/\mbox{\hyperlink{_vector_8hpp}{Vector.\+hpp}}\item 
+/home/eliash/\+K\+P\+O/\+Repo/zad5\+\_\+1-\/iliubin7/src/Vector.\+ipp\end{DoxyCompactItemize}
