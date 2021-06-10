@@ -31,7 +31,7 @@
  }
  bool  Scene::interface()
  {
-    cout<<"Wprowadz numer aktywnego drona:"<<endl;
+    cout<<"Wprowadz numer aktywnego drona, 0 lub 1:"<<endl;
     int nr;
     cin>>nr;
     if(nr<N)
