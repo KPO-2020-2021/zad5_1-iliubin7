@@ -85,8 +85,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7499968f3dec76618b496ac7c921319e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af685f82854dcdbcac885e7ddc83cd761"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dron.html#af685f82854dcdbcac885e7ddc83cd761">control</a> ()</td></tr>
 <tr class="separator:af685f82854dcdbcac885e7ddc83cd761"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0eabff529e7b498e3c395580b7e0462"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dron.html#ad0eabff529e7b498e3c395580b7e0462">def_way</a> (double way)</td></tr>
-<tr class="separator:ad0eabff529e7b498e3c395580b7e0462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb444f525df387cdabd9e2b156b1f3fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dron.html#abb444f525df387cdabd9e2b156b1f3fd">def_way</a> (double way, double angle)</td></tr>
+<tr class="separator:abb444f525df387cdabd9e2b156b1f3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97f3959b58f5da7708c94981401ba67b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dron.html#a97f3959b58f5da7708c94981401ba67b">way_by_circle</a> (double r)</td></tr>
+<tr class="separator:a97f3959b58f5da7708c94981401ba67b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a42665cef1dc527d783741f77d2025d13"></a>
@@ -144,8 +146,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad0eabff529e7b498e3c395580b7e0462"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0eabff529e7b498e3c395580b7e0462">&#9670;&nbsp;</a></span>def_way()</h2>
+<a id="abb444f525df387cdabd9e2b156b1f3fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb444f525df387cdabd9e2b156b1f3fd">&#9670;&nbsp;</a></span>def_way()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -154,8 +156,18 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void Dron::def_way </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>way</em></td><td>)</td>
+          <td class="paramname"><em>way</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -235,6 +247,25 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Metoda przesuniecia drona o podana droge </p>
+
+</div>
+</div>
+<a id="a97f3959b58f5da7708c94981401ba67b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97f3959b58f5da7708c94981401ba67b">&#9670;&nbsp;</a></span>way_by_circle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dron::way_by_circle </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Modyfikacja - metoda przelotu drona po okregu. (zostalo zrealizowane jako przelot drona po osmiokatu) Argumenty: r - promien okregu. Zwraca: przemieszcza dron ruchem po okregu i nastepnie zwraca go na swoja poczatkowa pozycje. </p>
 
 </div>
 </div>

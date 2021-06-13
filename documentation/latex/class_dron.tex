@@ -17,7 +17,9 @@ void \mbox{\hyperlink{class_dron_a7499968f3dec76618b496ac7c921319e}{write\+\_\+t
 \item 
 void \mbox{\hyperlink{class_dron_af685f82854dcdbcac885e7ddc83cd761}{control}} ()
 \item 
-void \mbox{\hyperlink{class_dron_ad0eabff529e7b498e3c395580b7e0462}{def\+\_\+way}} (double way)
+void \mbox{\hyperlink{class_dron_abb444f525df387cdabd9e2b156b1f3fd}{def\+\_\+way}} (double way, double angle)
+\item 
+void \mbox{\hyperlink{class_dron_a97f3959b58f5da7708c94981401ba67b}{way\+\_\+by\+\_\+circle}} (double r)
 \end{DoxyCompactItemize}
 
 
@@ -37,11 +39,11 @@ Konstruktor parametryczny klasy \mbox{\hyperlink{class_dron}{Dron}}
 \doxysubsubsection{\texorpdfstring{control()}{control()}}
 {\footnotesize\ttfamily void Dron\+::control (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Metoda kontroli nad dronem(wybieramy odpowiednie opcje przesuniecia lub obrotu i podajemy odpowiednio dlugosc lotu lub kierunek lotu(podajemy jako kat w stopniach))) Uzywamy ta funkcje dlatego, zeby byla widoczna animacja drona. Ta funckja zawiesza wykonanie na czas wyrazony w mikrosekundach.\mbox{\Hypertarget{class_dron_ad0eabff529e7b498e3c395580b7e0462}\label{class_dron_ad0eabff529e7b498e3c395580b7e0462}} 
+Metoda kontroli nad dronem(wybieramy odpowiednie opcje przesuniecia lub obrotu i podajemy odpowiednio dlugosc lotu lub kierunek lotu(podajemy jako kat w stopniach))) Uzywamy ta funkcje dlatego, zeby byla widoczna animacja drona. Ta funckja zawiesza wykonanie na czas wyrazony w mikrosekundach.\mbox{\Hypertarget{class_dron_abb444f525df387cdabd9e2b156b1f3fd}\label{class_dron_abb444f525df387cdabd9e2b156b1f3fd}} 
 \index{Dron@{Dron}!def\_way@{def\_way}}
 \index{def\_way@{def\_way}!Dron@{Dron}}
 \doxysubsubsection{\texorpdfstring{def\_way()}{def\_way()}}
-{\footnotesize\ttfamily void Dron\+::def\+\_\+way (\begin{DoxyParamCaption}\item[{double}]{way }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Dron\+::def\+\_\+way (\begin{DoxyParamCaption}\item[{double}]{way,  }\item[{double}]{angle }\end{DoxyParamCaption})}
 
 Metoda okreslenia drogi drona. \mbox{\Hypertarget{class_dron_ad71d03ed602f200acf3901a73b3328f4}\label{class_dron_ad71d03ed602f200acf3901a73b3328f4}} 
 \index{Dron@{Dron}!lifting@{lifting}}
@@ -67,7 +69,13 @@ Metoda obrotu rotorow drona wokol wlasnej osi (rotory obracaja sie przeciwlegle 
 \doxysubsubsection{\texorpdfstring{translate()}{translate()}}
 {\footnotesize\ttfamily void Dron\+::translate (\begin{DoxyParamCaption}\item[{double}]{way }\end{DoxyParamCaption})}
 
-Metoda przesuniecia drona o podana droge \mbox{\Hypertarget{class_dron_a7499968f3dec76618b496ac7c921319e}\label{class_dron_a7499968f3dec76618b496ac7c921319e}} 
+Metoda przesuniecia drona o podana droge \mbox{\Hypertarget{class_dron_a97f3959b58f5da7708c94981401ba67b}\label{class_dron_a97f3959b58f5da7708c94981401ba67b}} 
+\index{Dron@{Dron}!way\_by\_circle@{way\_by\_circle}}
+\index{way\_by\_circle@{way\_by\_circle}!Dron@{Dron}}
+\doxysubsubsection{\texorpdfstring{way\_by\_circle()}{way\_by\_circle()}}
+{\footnotesize\ttfamily void Dron\+::way\+\_\+by\+\_\+circle (\begin{DoxyParamCaption}\item[{double}]{r }\end{DoxyParamCaption})}
+
+Modyfikacja -\/ metoda przelotu drona po okregu. (zostalo zrealizowane jako przelot drona po osmiokatu) Argumenty\+: r -\/ promien okregu. Zwraca\+: przemieszcza dron ruchem po okregu i nastepnie zwraca go na swoja poczatkowa pozycje. \mbox{\Hypertarget{class_dron_a7499968f3dec76618b496ac7c921319e}\label{class_dron_a7499968f3dec76618b496ac7c921319e}} 
 \index{Dron@{Dron}!write\_to\_file@{write\_to\_file}}
 \index{write\_to\_file@{write\_to\_file}!Dron@{Dron}}
 \doxysubsubsection{\texorpdfstring{write\_to\_file()}{write\_to\_file()}}
