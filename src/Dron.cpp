@@ -79,15 +79,134 @@ void Dron::write_to_file()
         copy_rotor[i].write_to_file();
 }
 
+void Dron::way_by_circle(double r)
+{
+   double  a=(r*2)/sqrt(4+2*sqrt(2));
+//promien
+        def_way(r,0);
+        Lacze.DodajNazwePliku("../datasets/way.dat");
+        for (int i = 0; i < 100; i++)
+        {
+            copy = orginal;
+            for (int j = 0; j < 4; j++)
+                copy_rotor[j] = oryg_rotor[j];
+            lifting(1);
+            rotor_rotation();
+            write_to_file();
+            Lacze.Rysuj();
+            usleep(TIME);
+        }
+                for (int i = 0; i < r; i++)
+        {
+            copy = orginal;
+            for (int j = 0; j < 4; j++)
+                copy_rotor[j] = oryg_rotor[j];
+            translate(1);
+            rotor_rotation();
+            write_to_file();
+            Lacze.Rysuj();
+            usleep(TIME);
+        }
+ // pierwszy obrot
+  def_way(a,112);
+        for (int i = 0; i < 112; i++)
+            {
+                copy = orginal;
+                for (int i = 0; i < 4; i++)
+                    copy_rotor[i] = oryg_rotor[i];
+                rotate(1);
+                rotor_rotation();
+                write_to_file();
+                Lacze.Rysuj();
+                usleep(TIME);
+            }
+                for (int i = 0; i < a; i++)
+        {
+            copy = orginal;
+            for (int j = 0; j < 4; j++)
+                copy_rotor[j] = oryg_rotor[j];
+            translate(1);
+            rotor_rotation();
+            write_to_file();
+            Lacze.Rysuj();
+            usleep(TIME);
+        }
+
+    for(int i=0; i<7; i++)
+    {
+        def_way(a,45);
+        for (int i = 0; i < 45; i++)
+            {
+                copy = orginal;
+                for (int i = 0; i < 4; i++)
+                    copy_rotor[i] = oryg_rotor[i];
+            rotate(1);
+            rotor_rotation();
+            write_to_file();
+            Lacze.Rysuj();
+            usleep(TIME);
+            }
+                for (int i = 0; i < a; i++)
+        {
+            copy = orginal;
+            for (int j = 0; j < 4; j++)
+                copy_rotor[j] = oryg_rotor[j];
+            translate(1);
+            rotor_rotation();
+            write_to_file();
+            Lacze.Rysuj();
+            usleep(TIME);
+        }
+  
+    }
+
+        for (int i = 0; i < 113; i++)
+            {
+                copy = orginal;
+                for (int i = 0; i < 4; i++)
+                    copy_rotor[i] = oryg_rotor[i];
+            rotate(1);
+            rotor_rotation();
+            write_to_file();
+            Lacze.Rysuj();
+            usleep(TIME);
+            }
+                for (int i = 0; i < r; i++)
+        {
+            copy = orginal;
+            for (int j = 0; j < 4; j++)
+                copy_rotor[j] = oryg_rotor[j];
+            translate(1);
+            rotor_rotation();
+            write_to_file();
+            Lacze.Rysuj();
+            usleep(TIME);
+        }
+            for (int i = 0; i < 100; i++)
+        {
+            copy = orginal;
+            for (int j = 0; j < 4; j++)
+                copy_rotor[j] = oryg_rotor[j];
+            lifting(-1);
+            rotor_rotation();
+            write_to_file();
+            Lacze.Rysuj();
+            usleep(TIME);
+        }
+       Lacze.UsunOstatniaNazwe();
+}
+
 void Dron::control()
 {
     double way;
     double angle;
+    double r;
     char op;
 
     write_to_file();
     cout << "p - przesuniecie\n";
     cout << "o - obrot\n";
+    cout << "c - ruch po okregu\n";
     cout << "opcje :";
     cin >> op;
     switch (op)
@@ -95,7 +214,7 @@ void Dron::control()
     case 'p':
         cout << "podaj dlugosc lotu: ";
         cin >> way;
-        def_way(way);
+        def_way(way, angle);
         Lacze.DodajNazwePliku("../datasets/way.dat", PzG::RR_Ciagly, 2);
         for (int i = 0; i < 100; i++)
         {
@@ -169,12 +288,17 @@ void Dron::control()
         }
 
         break;
+        case 'c':
+        cout << "podaj promien okregu\n";
+        cin >> r;
+        way_by_circle(r);
+        break;
     default:
         break;
     }
 }
 
-void Dron::def_way(double way)
+void Dron::def_way(double way,double angle)
 {
     Vector3D next = copy.get_center();
     next[2] = 0;

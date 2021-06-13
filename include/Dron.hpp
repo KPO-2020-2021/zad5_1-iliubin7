@@ -88,5 +88,14 @@ public:
   /*! 
   * Metoda okreslenia drogi drona.
   */
-  void def_way(double way);
+  void def_way(double way,double angle);
+  /*! 
+  * Modyfikacja - metoda przelotu drona po okregu.
+  * (zostalo zrealizowane jako przelot drona po osmiokatu)
+  * Argumenty:
+  * r - promien okregu. 
+  * Zwraca:
+  * przemieszcza dron ruchem po okregu i nastepnie zwraca go na swoja poczatkowa pozycje.
+  */
+  void way_by_circle(double r);
 }; 
