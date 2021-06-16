@@ -10,8 +10,8 @@
        Lacze.UstawZakresX(-300, 300);
        Lacze.UstawZakresZ(-300, 300);
 
-       double tab_wym[3]={600,600,0};
-       Vector3D size_bottom(tab_wym);
+       double tab_s[3]={600,600,0};
+       Vector3D size_bottom(tab_s);
        bottom=new Surface(size_bottom,20);
        Lacze.DodajNazwePliku(bottom->get_name().c_str(), PzG::RR_Ciagly, 2);
        bottom->write_to_file();
